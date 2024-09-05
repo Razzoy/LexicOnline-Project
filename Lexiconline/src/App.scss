@@ -5,11 +5,39 @@
 //font-family: "Karma", serif;
 @import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
 
-:root{
-    $font-color: #5A5A5A;
-    $page-primary: #F4F4F4;
-    $page-secondary: #57842A;
-    $page-marking: #42651E;
-    $audio-marking: #D9D9D9;
-    $hmm-white: #FFF;
+body{
+    margin: 0;
+    font-family: "Karla", sans-serif;
 }
+
+//COLOR MODS",
+    $bg-red: #c66;
+    $bg-yellow: #fc6;
+    $bg-green: #9c9;
+    $bg-blue: #668599;
+//BREAKPOINTS",
+      $x-large: 1300px; //MORE THAN 1300px
+      $large: 1300px;   //LOWER THAN 1300px
+      $tablet: 980px;   //LOWER THAN 900px
+      $mobile: 580px;   //LOWER THAN 580px
+//MEDIAQUERIES
+    @media (min-width: $x-large) {
+        body{
+        background-color: $bg-blue;
+        }
+    }
+    @media (max-width: $large) {
+        body{
+        background-color: $bg-red;
+        }
+    }
+    @media (max-width: $tablet) {
+        body{
+        background-color: $bg-yellow;
+        }
+    }
+    @media (max-width: $mobile){
+        body{
+        background-color: $bg-green;
+        }
+    }

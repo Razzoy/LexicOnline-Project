@@ -25,13 +25,9 @@ export function Home() {
         let res = await fetch(url)
         let data = await res.json()
         setWordData(data);
-        console.log(wordData);
+        console.log(data);
 
     }
-
-    useEffect(()=>{
-        
-    }, [inputValue])
 
 
     return (

@@ -1,0 +1,19 @@
+@use '../../style/variables' as *;
+
+.headerStyle{
+    background-image:url('src/assets/pageImage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height:30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-family: "Marck Script", cursive;
+        color: $page-primary;
+        font-weight: 400;
+        font-size: 50px;
+    }
+}

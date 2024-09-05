@@ -1,0 +1,17 @@
+@use '../../style/variables' as *;
+
+span{
+    background-color: $page-marking;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    img{
+        width: 2rem;
+        display: block;
+    }
+}

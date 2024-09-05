@@ -1,0 +1,48 @@
+@use '../../style/variables' as *;
+
+.navbarStyle {
+    position: relative;
+    background-color: $page-secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    ul{
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        gap: 2rem;
+        li{
+            font-weight: 300;
+            min-width: 3.5rem;
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                text-decoration-color: $page-primary;
+            }
+            a{
+                
+                text-decoration: none;
+                font-size: 1rem;
+                color: $page-primary;
+            }
+        }
+    }
+}
+
+.book{
+    background-color: $page-secondary;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -2.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
