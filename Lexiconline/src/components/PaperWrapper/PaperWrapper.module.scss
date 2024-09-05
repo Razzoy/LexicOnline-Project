@@ -1,0 +1,12 @@
+@use '../../style/variables' as *;
+
+.paperWrapperStyle{
+    position: relative;
+    z-index: 6;
+    height: 40rem;
+    background-color: $hmm-white;
+    margin: -2rem 2rem 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px #00000066;
+
+}

@@ -4,12 +4,22 @@
     background-image:url('src/assets/pageImage.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
+    background-position: 0%;
     height:30vh;
+    z-index: 0;
+      
+}
+
+.backDrop{
+    position: absolute;
+    top: 3.2rem;
+    background-color: #00000033;
+    width: 100vw;
+    height: 30vh;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
     h1{
         font-family: "Marck Script", cursive;
         color: $page-primary;

@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
+import { SearchBox } from "../components/SearchBox/SearchBox";
+import { PaperWrapper } from "../components/PaperWrapper/PaperWrapper";
 
 export function Home() {
     useEffect(() => {
@@ -9,32 +11,11 @@ export function Home() {
 
     }, [])
 
-    const [inputValue, setInputValue] = useState('');
-    const [wordData, setWordData] = useState(null);
-
-
-    const wordChange = (e) => {
-        setInputValue(e.target.value);
-    };
-
-    
-    const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${inputValue}`
-    async function fetchWord() {
-        if (!inputValue.trim()) return;
-
-        let res = await fetch(url)
-        let data = await res.json()
-        setWordData(data);
-        console.log(data);
-
-    }
-
 
     return (
         <>
-            <input type="text" value={inputValue} onChange={wordChange} placeholder="Write a word"/>
-            <button onClick={() => fetchWord()}>Get Your Word!!</button>
-
+            <SearchBox title={'Enter a word to search for'}/>
+            <PaperWrapper/>
         </>
     )
 }

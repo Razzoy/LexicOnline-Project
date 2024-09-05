@@ -1,4 +1,6 @@
 import { useEffect } from "react"
+import { SearchBox } from "../components/SearchBox/SearchBox";
+import { PaperWrapper } from "../components/PaperWrapper/PaperWrapper";
 
 export function About() {
 
@@ -10,6 +12,10 @@ export function About() {
     }, [])
     return(
         <>
+        <SearchBox title={'About Lexiconline'} hidden='hideSearchBar'>
+
+        </SearchBox>
+        <PaperWrapper/>
         </>
     )
 }

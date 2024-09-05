@@ -1,0 +1,61 @@
+@use '../../style/variables' as *;
+
+.searchBoxStyle {
+    position: relative;
+    padding: 1rem 1rem 4rem;
+    background-color: $page-primary;
+    border-radius: 0.6rem;
+    width: 70vw;
+    margin: auto;
+    z-index: 5;
+    margin-top: -3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 10rem;
+
+    h2 {
+        color: $font-color;
+        margin: 0;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .searchContainer {
+
+        input,
+        button {
+            border: 1px solid $page-secondary;
+            padding: 0.7rem;
+            font-family: "Karla", sans-serif;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input {
+            border-right: none;
+            background-color: $hmm-white;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+
+        }
+
+        button {
+            border-left: none;
+            background-color: $page-secondary;
+            color: $search;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+
+            &:hover {
+                background-color: $page-marking;
+            }
+        }
+    }
+}
+
+.hideSearchBar {
+    display: none;
+}
