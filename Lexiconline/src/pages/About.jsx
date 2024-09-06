@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { SearchBox } from "../components/SearchBox/SearchBox";
 import { PaperWrapper } from "../components/PaperWrapper/PaperWrapper";
+import { AboutPaper } from "../components/PaperWrapper/AboutPaper/AboutPaper";
 
 export function About() {
 
@@ -15,7 +16,9 @@ export function About() {
         <SearchBox title={'About Lexiconline'} hidden='hideSearchBar'>
 
         </SearchBox>
-        <PaperWrapper/>
+        <PaperWrapper>
+            <AboutPaper/>
+        </PaperWrapper>
         </>
     )
 }

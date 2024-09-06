@@ -3,10 +3,49 @@
 .paperWrapperStyle{
     position: relative;
     z-index: 6;
-    height: 40rem;
     background-color: $hmm-white;
     margin: -2rem 2rem 4rem;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 2px #00000066;
-
+    padding: 3rem;
 }
+
+.homePaperStyle{
+    font-family: "Karma", serif;
+    h2, h3{
+        margin: 0;
+        color: $page-secondary;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        span{
+            background-color: $search;
+            width: 2rem;
+            height: 2rem;
+            margin: 0;
+            margin-bottom: 0.5rem;
+            img{
+                width: 1.5rem;
+            }
+        }
+        
+    }
+}
+
+.aboutPaperStyle{
+
+    p{
+        font-size: 2.5vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+}
+

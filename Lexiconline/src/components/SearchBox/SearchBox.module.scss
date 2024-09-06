@@ -11,10 +11,9 @@
     margin-top: -3.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
 
     h2 {
         color: $font-color;
@@ -54,6 +53,13 @@
             }
         }
     }
+}
+
+.fillerContainer{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 2.7rem;
 }
 
 .hideSearchBar {
