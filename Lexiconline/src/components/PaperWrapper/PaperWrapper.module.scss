@@ -13,18 +13,19 @@
 .homePaperStyle{
     font-family: "Karma", serif;
     h2, h3{
-        margin: 0;
         color: $page-secondary;
         font-weight: 500;
     }
-    h2{
-        font-size: 2rem;
-    }
+    
     header{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        h2{
+            font-size: 2rem;
+            margin: 0;
+        }
         span{
             background-color: $search;
             width: 2rem;
@@ -37,15 +38,30 @@
         }
         
     }
+
+    .verb{
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        padding: 1rem 0;
+    }
 }
 
 .aboutPaperStyle{
 
-    p{
+    p, li{
         font-size: 2.5vw;
     }
     h3{
         font-size: 3vw;
+    }
+
+    @media (min-width: $large){
+        p, li{
+            font-size: 1vw;
+        }
+        h3{
+            font-size: 1.5vw;
+        }
     }
 }
 
