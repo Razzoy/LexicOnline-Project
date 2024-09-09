@@ -28,6 +28,15 @@
                 font-size: 1rem;
                 color: $page-primary;
             }
+            
+        }
+        @media (min-width: $large){
+            gap: 3rem;
+            li{
+                a{
+                    font-size: 1.5rem;
+                    }
+            }
         }
     }
 }
@@ -45,4 +54,13 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 2;
+
+    @media (min-width: $large){
+        height: 12rem;
+        width: 12rem;
+        span{
+            margin-top: 6rem;
+        }
+    }
 }
+

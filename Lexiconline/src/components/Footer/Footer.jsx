@@ -17,7 +17,7 @@ export function Footer() {
                         <li>Phone: 44332343</li>
                     </ul>
                     <ul>
-                        <li>With special thaks to</li>
+                        <li>With special thanks to:</li>
                         <li>https://dictionaryapi.dev/</li>
                         <li>for the awesome API</li>
                     </ul>

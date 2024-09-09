@@ -1,6 +1,6 @@
 @use '../../style/variables' as *;
 
-span{
+span {
     background-color: $page-marking;
     display: block;
     border-radius: 50%;
@@ -10,8 +10,17 @@ span{
     margin-top: 5rem;
     width: 3.3rem;
     height: 3.3rem;
-    img{
+
+    img {
         width: 2rem;
         display: block;
+    }
+
+    @media(min-width: $large) {
+        width: 4rem;
+        height: 4rem;
+        img{
+            width: 2.5rem;
+        }
     }
 }

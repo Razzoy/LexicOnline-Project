@@ -44,6 +44,19 @@
         border-top: 1px solid black;
         padding: 1rem 0;
     }
+
+    @media(min-width: $large){
+        h3{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 3rem !important;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    
 }
 
 .aboutPaperStyle{
@@ -57,10 +70,10 @@
 
     @media (min-width: $large){
         p, li{
-            font-size: 1vw;
+            font-size: 1.5vw;
         }
         h3{
-            font-size: 1.5vw;
+            font-size: 2vw;
         }
     }
 }
