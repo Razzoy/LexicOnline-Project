@@ -11,7 +11,7 @@ export function HomePaper({ wordData }) {
                 <span>
                     <img src="../src/assets/audioIcon.svg" alt="" />
                 </span>
-                {wordData ? <h2>{wordData.word}</h2> : <h2>word</h2>}
+                {wordData ? <h2>{wordData.word}</h2> : <h2>"word"</h2>}
             </header>
             <section className={style.noun}>
                 <h3>Noun:</h3>
