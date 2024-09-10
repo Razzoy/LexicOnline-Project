@@ -20,7 +20,6 @@ export function SearchBox({ title, hidden, setWordData }) {
         let data = await res.json();
         setWordData(data[0]);
 
-
     }
 
     return (
