@@ -1,4 +1,4 @@
-import style from '../PaperWrapper/PaperWrapper.module.scss'
+import style from './PaperWrapper.module.scss'
 
 export function PaperWrapper ({children}){
     return (

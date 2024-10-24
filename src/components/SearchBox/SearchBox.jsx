@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from '../SearchBox/SearchBox.module.scss'
+import style from './SearchBox.module.scss'
 
 
 export function SearchBox({ title, hidden, setWordData }) {

@@ -1,4 +1,4 @@
-import style from '../BookIcon/BookIcon.module.scss'
+import style from './BookIcon.module.scss'
 
 export function BookIcon() {
     return (
