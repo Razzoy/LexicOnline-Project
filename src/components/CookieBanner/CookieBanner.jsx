@@ -5,27 +5,27 @@ import ReactGA from "react-ga4";
 export function CookieBanner() {
 
     const [withTracking, setWithTracking] = useState(false);
-    const [hasUserCookie, setHasUserCookie] = useState(false);
+    const [showBanner, setShowBanner] = useState(true);
 
     if (withTracking === true) {
         ReactGA.initialize('G-5NFTF5064C')
     }
 
     function enableGA() {
-        setWithTracking(true)
-        setHasUserCookie(false);
-        localStorage.setItem('userAccept', true)
+        setWithTracking(true);
+        setShowBanner(false);
+        localStorage.setItem('userAccept', true);
     }
     function disableGA() {
-        setWithTracking(false)
-        setHasUserCookie(true);
-        localStorage.setItem('userAccept', false)
+        setWithTracking(false);
+        setShowBanner(false);
+        localStorage.setItem('userAccept', false);
     }
 
     const hasUserAccepted = localStorage.getItem('userAccept');
 
     return (
-        !hasUserCookie === false &&
+        showBanner === true &&
         hasUserAccepted === null(
             <div className={style.cookie_banner}>
                 <section>
