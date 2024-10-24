@@ -4,6 +4,7 @@ import style from './MainLayout.module.scss'
 import { Header } from "../components/Header/Header";
 import { Navbar } from "../components/Navbar/Navbar";
 import { Footer } from "../components/Footer/Footer";
+import { CookieBanner } from "../components/CookieBanner/CookieBanner";
 
 export function MainLayout() {
     return (
@@ -14,6 +15,8 @@ export function MainLayout() {
                 <Outlet />
             </main>
             <Footer/>
+
+            <CookieBanner/>
         </>
     )
 }
