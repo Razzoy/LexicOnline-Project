@@ -26,7 +26,8 @@ export function CookieBanner() {
 
     return (
         showBanner === true &&
-        hasUserAccepted === null(
+        hasUserAccepted === null &&
+        (
             <div className={style.cookie_banner}>
                 <section>
                     <p>This site uses cookies for tracking purposes. We encourage you to accept this!</p>
