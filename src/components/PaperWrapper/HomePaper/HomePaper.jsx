@@ -9,7 +9,7 @@ export function HomePaper({ wordData }) {
         <div className={style.homePaperStyle}>
             <header>
                 <span>
-                    <img src="../src/assets/audioIcon.svg" alt="" />
+                    <img src="../assets/audioIcon.svg" alt="" />
                 </span>
                 {wordData ? <h2>{wordData.word}</h2> : <h2>"word"</h2>}
             </header>
