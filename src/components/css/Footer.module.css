@@ -1,0 +1,52 @@
+.footerStyle {
+  background-color: #57842A;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  padding: 3rem 2rem 2rem;
+  gap: 2rem;
+}
+.footerStyle .listContainer {
+  display: flex;
+  gap: 2rem;
+}
+.footerStyle .listContainer ul {
+  list-style-type: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.footerStyle .listContainer ul li {
+  font-family: "Karma", serif;
+  color: #F4F4F4;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+@media (min-width: 1200px) {
+  .footerStyle .listContainer {
+    gap: 10rem;
+  }
+  .footerStyle .listContainer ul li {
+    font-size: 1.2rem;
+  }
+}
+.footerStyle .brandContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footerStyle .brandContainer span {
+  margin: 0;
+}
+.footerStyle .brandContainer h2 {
+  margin: 0.5rem;
+  color: #F4F4F4;
+  font-family: "Marck Script", cursive;
+  font-weight: 300;
+  font-size: 1rem;
+}
+@media (min-width: 1200px) {
+  .footerStyle .brandContainer h2 {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

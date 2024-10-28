@@ -1,0 +1,35 @@
+.headerStyle {
+  background-image: url("/pageImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  height: 40vw;
+  z-index: 0;
+}
+
+.backDrop {
+  position: absolute;
+  top: 3.2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 40vw;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backDrop h1 {
+  font-family: "Marck Script", cursive;
+  color: #F4F4F4;
+  font-weight: 400;
+  font-size: 9vw;
+}
+
+@media (min-width: 1200px) {
+  .headerStyle, .backDrop {
+    height: 35vw;
+  }
+  .backDrop {
+    top: 3.7rem;
+  }
+}/*# sourceMappingURL=Header.module.css.map */
